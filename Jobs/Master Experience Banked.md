@@ -15,7 +15,7 @@
 
 ### Core summary (2–3 sentences)
 
-> Senior Software Engineer with 4+ years of experience designing and delivering scalable, secure, and distributed systems, currently pursuing a Master’s in Computer Science at UCD. Strong expertise in backend engineering, cloud-native architectures, and enterprise application development, with end-to-end ownership of feature delivery from design through to production. Experienced in collaborating with business stakeholders to translate complex requirements into robust, scalable technical solutions, with a focus on reliability, performance, and automation. Proven ability to drive impactful engineering outcomes in fast-paced, cross-functional environments..
+> Senior Backend Engineer with 4+ years of experience designing and building scalable, distributed systems using cloud-native architectures (AWS). Proven track record of owning end-to-end system delivery, improving performance and reliability, and optimizing large-scale backend services. Currently pursuing an MSc in Computer Science at UCD, with a strong focus on distributed systems, system design, and real-world scalability challenges.
 
 ### Skills
 **Languages:** Java, TypeScript, Python, Node.js, Ruby 
@@ -47,7 +47,7 @@
 
 - **Mentored** and onboarded 3+ engineers on high-concurrency distributed systems, which reduced average developer ramp-up time by 30% and improved team architectural consistency.
 
-- **Architected** and owned the end-to-end lifecycle of mission-critical features—spanning design, integration testing, and data migration—resulting in a 100% on-time delivery rate with zero post-deployment downtime.
+- Owned end-to-end delivery of mission-critical features (design → deployment), achieving 100% on-time delivery with zero downtime
 
 - **Championed** internal technical workshops on modern AWS services (CDK, Serverless, and IAM), leading to the successful migration of legacy workflows to cloud-native architectures and reducing infrastructure overhead.
 
@@ -278,10 +278,11 @@ As a Software Engineering Intern, I was responsible for designing and developing
 Dates: 2022-2026
 **What you did:**
 
-[Event Head] -- [Gandharva]
+[Event Head] -- [EarnCode]
 Dates: 2019
 **What you did:**
-
+- Arranged event EarnCode, attended by over 150+ people
+- Led marketing efforts resulting in the highest participant acquisition, earning recognition for outstanding impact
 
 
 ---
