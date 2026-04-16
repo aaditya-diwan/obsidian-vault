@@ -12,6 +12,7 @@
 **LinkedIn:** https://www.linkedin.com/in/aaditya-diwan/ 
 **GitHub:** https://github.com/aaditya-diwan
 **Portfolio:**  
+**Work Authorization:** Currently based in Dublin on a Stamp 2 student visa; eligible for a Graduate Visa from **01/05/2026**
 
 ### Core summary (2–3 sentences)
 
@@ -46,12 +47,10 @@
 #### Achievements & contributions
 
 - **Mentored** and onboarded 3+ engineers on high-concurrency distributed systems, which reduced average developer ramp-up time by 30% and improved team architectural consistency.
-
-- Owned end-to-end delivery of mission-critical features (design → deployment), achieving 100% on-time delivery with zero downtime
-
-- **Championed** internal technical workshops on modern AWS services (CDK, Serverless, and IAM), leading to the successful migration of legacy workflows to cloud-native architectures and reducing infrastructure overhead.
-
-- **Engineered** award-winning solutions during corporate hackathons by implementing rapid prototypes for complex problems, which were later integrated into the core product roadmap to enhance user engagement.
+- Owned end-to-end delivery of mission-critical features spanning insurance policy workflows, cloud infrastructure, and API integrations — driving design through deployment with zero downtime across all releases
+- Established high code quality standards through rigorous pull request reviews and test coverage practices, contributing to a measurable improvement in release cadence and reduction in production defects
+- Engineered award-winning hackathon prototypes for complex business problems, two of which were fully shipped to production — directly enhancing user engagement and contributing to the core product roadmap
+- Designed and implemented PII data protection pipelines using AWS KMS encryption/decryption integrated with DynamoDB, ensuring secure storage and access control of sensitive customer data in compliance with enterprise security standards
 
 #### Technologies used
 - **IAC** - AWS CDK, Cloudformation
@@ -87,8 +86,8 @@ Worked as a backend-focused Software Engineer responsible for designing, buildin
 
 - Migrated legacy **SOAP-based services to RESTful APIs**, reducing payload overhead and system coupling, improving response efficiency by **25%** and increasing service availability from **97.5% to 99.2%**
 - Designed and implemented **event-driven workflows** using AWS Lambda and Step Functions, reducing policy processing time by **30%** through scalable microservices architecture
-- Built and enhanced backend services with a focus on **performance, reliability, and maintainability** in production environments
-- Authored high-quality pull requests with strong test coverage, ensuring **low defect rates and stable releases**
+- Worked on business-critical insurance workflows impacting core operation with a focus on **performance, reliability, and maintainability** in production environments
+- *Championed* internal technical workshops on modern AWS services (CDK, Serverless, and IAM), leading to the successful migration of legacy workflows to cloud-native architectures and reducing infrastructure overhead.
 - Led and contributed to **automation initiatives** that improved team productivity and reduced manual effort
 - Delivered **BU-wide technical presentations (150+ engineers)** on AWS best practices and learnings, promoting cloud adoption and knowledge sharing
 - Recognized with **multiple individual and team awards**, including an **innovation award** for driving impactful process improvements
@@ -118,11 +117,17 @@ Worked as a backend-focused Software Engineer responsible for designing, buildin
 **Tags:** 
 
 #### What the role was
-
+>I deconstructed and documented intricate insurance workflows to bridge the gap between legacy business logic and modern automated systems. As a member of the "Technical Pillar," I architected reusable microservice design patterns that served as a standardized foundation for over 10 cross-functional engineering teams. I also ensured high-quality deployments by executing manual feature validation and developing automated test suites to streamline the delivery pipeline.
 #### Achievements & contributions
-
+- **Architected and implemented microservice design patterns** as a core member of the Technical Pillar, establishing standardized frameworks adopted by 10+ engineering teams.
+- **Deconstructed complex insurance workflows** into comprehensive technical documentation, streamlining the transition from legacy processes to automated systems.
+- **Accelerated delivery cycles** by executing rigorous manual feature testing and developing automated test suites to ensure high-quality software deployments.
 #### Technologies used
-
+- IBM ODM, IBM DB2
+- Java, JUnit, 
+- Spring Boot
+- AWS
+- 
 #### What to highlight for...
 
 - **Backend roles:**
@@ -132,13 +137,13 @@ Worked as a backend-focused Software Engineer responsible for designing, buildin
 ---
 ### [Intern] — [Principal Global Services]
 
-**Dates:** January 2021 – May 2025  
+**Dates:** January 2021 – May 2021  
 **Location:**  Pune
 **Type:** Full-time  
 **Tags:** 
 
 #### What the role was
-As an Intern, I was responsible for   delivering internal tools aimed at optimizing business workflows. This included end-to-end ownership of system design, development, and deployment using serverless, cloud-native technologies.
+As an Intern, I was responsible for delivering internal tools aimed at optimizing business workflows. This included end-to-end ownership of system design, development, and deployment using serverless, cloud-native technologies.
 #### Achievements & contributions
 - Designed and delivered an in-house system, **“Diligence,”** automating key SBD workflows and reducing manual effort by ~150 hours per month
 - Owned the project end-to-end, from requirement gathering and system design to deployment and optimization
@@ -203,18 +208,33 @@ As a Software Engineering Intern, I was responsible for designing and developing
 - **Vite 5.4.21** - Fast build tool and dev server
 ---
 
-### [Project Name]
+MediTrack — Healthcare Microservices Platform
 
-**Link:**  
-**Dates:**  
-**Context:**  
-**Tags:**
+Link: github.com/AadityaDiwan/MediTrack
+Dates: 2026
+A healthcare backend simulating real EHR (Electronic Health Record) system concerns — HIPAA-adjacent data handling, event-driven inter-service communication, and clinical workflow coordination across independent services.
+Tags: Java Spring Boot Microservices Kafka PostgreSQL Docker Security CI/CD
 
-#### What it is
+**What it is**
 
-#### What you built & how
+A microservices backend for a fictional hospital system, covering patient registration, laboratory order management, and insurance policy administration. Designed to practice and demonstrate enterprise Java patterns at the level expected in a backend engineering role at a healthcare or fintech company.
 
-#### Stack
+**What you built & how**
+
+  - Architected three independent services (patient, lab, insurance) using hexagonal architecture (ports & adapters), keeping domain logic fully decoupled from Spring, JPA, and Kafka
+  - Implemented transactional outbox pattern in the lab service — lab orders write an event to a DB outbox table within the same transaction, and a scheduled relay publishes to Kafka, eliminating message loss on broker outages
+  - Built role-based access control (RBAC) end-to-end: roles embedded as JWT claims at login, extracted by a custom OncePerRequestFilter, and enforced at the HTTP method + path level via Spring Security with @EnableMethodSecurity
+  - Shipped full insurance policy CRUD with hexagonal layering, a Kafka consumer for patient.created events, optimistic locking via @Version, and dual Flyway migration paths (H2 for local dev, PostgreSQL for Docker)
+  - Hardened security across all services: externalized all secrets to environment variables, locked down all endpoints with role rules, fixed a PHI log-leak (BasicBinder: TRACE was printing SSNs and diagnoses to logs), and added @Valid + constraint annotations to all request DTOs
+  - Configured Kafka reliability on the consumer side: dead-letter topics (DLT) + exponential backoff (1s → 2s → 4s, 5 attempts) via DefaultErrorHandler
+  - Set up GitHub Actions CI with three parallel jobs (one per service) running build, tests, and OWASP dependency vulnerability scanning on every push and PR
+  - Standardised all services on Spring Boot 3.2.4 / Java 21, migrated JJWT from 0.11.5 → 0.12.6 (full API rewrite), and added OpenAPI/Swagger UI to all three services
+
+**Stack**
+
+  Java 21, Spring Boot 3.2.4, Spring Security (JWT / stateless), Spring Data JPA, Apache Kafka, PostgreSQL, H2, Flyway,
+  Redis, Docker Compose, GitHub Actions CI, OWASP Dependency Check, Lombok, Springdoc OpenAPI, Micrometer / Prometheus,
+  Zipkin/Jaeger
 
 ---
 
@@ -233,7 +253,7 @@ As a Software Engineering Intern, I was responsible for designing and developing
 ### [MSc Computer Science] — [University College Dublin]
 
 **Dates:** 2025 – 2026
-**GPA:** _3.72/4.3_  
+**GPA:** **_3.72/4.3_**  
 **Relevant modules:** 
 1. Advance Data Structures
 2. Generative AI
@@ -277,6 +297,7 @@ As a Software Engineering Intern, I was responsible for designing and developing
 [Professional Development Director] -- [Rotaract Club of Pune, Shaniwarwada]
 Dates: 2022-2026
 **What you did:**
+- 
 
 [Event Head] -- [EarnCode]
 Dates: 2019
