@@ -11,7 +11,7 @@
 **Email:** aadityapdiwan@gmail.com
 **LinkedIn:** https://www.linkedin.com/in/aaditya-diwan/ 
 **GitHub:** https://github.com/aaditya-diwan
-**Portfolio:**  
+**Portfolio:**  https://aadityapdiwan.dev/
 **Work Authorization:** Currently based in Dublin on a Stamp 2 student visa; eligible for a Graduate Visa from **01/05/2026**
 
 ### Core summary (2–3 sentences)
