@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Jobs/Master Experience Banked.md",
-                "mode": "source",
+                "file": "Projects/Meditrack/Mental Map.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Master Experience Banked"
+              "title": "Mental Map"
             }
           }
         ],
@@ -215,7 +215,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -235,7 +235,12 @@
   },
   "active": "e0d0e69407dd6c10",
   "lastOpenFiles": [
+    "Projects/Meditrack/Hexagonal Pattern.md",
+    "Projects/Meditrack/Mental Map.md",
+    "Projects/Meditrack/Big Picture Overview.md",
     "Jobs/Master Experience Banked.md",
+    "Projects/Meditrack",
+    "Projects",
     "Jobs",
     "Daily ToDo's/2026-03-30.md",
     "Daily ToDo's",
