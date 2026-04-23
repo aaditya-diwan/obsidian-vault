@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "UCD/DEADLINE - PROJECTS & ASSIGNMENTS.md",
+                "file": "Jobs/technical.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DEADLINE - PROJECTS & ASSIGNMENTS"
+              "title": "technical"
             }
           }
         ]
@@ -220,14 +220,16 @@
   },
   "active": "37d9cc6313b04e88",
   "lastOpenFiles": [
-    "UCD/EXAMS.md",
-    "UCD/DEADLINE - PROJECTS & ASSIGNMENTS.md",
     "Jobs/Master Experience Banked.md",
+    "Jobs/behavioral.md",
+    "Jobs/technical.md",
+    "UCD/DEADLINE - PROJECTS & ASSIGNMENTS.md",
+    "UCD/EXAMS.md",
+    "Projects/Meditrack/Big Picture Overview.md",
     "UCD",
     "Daily ToDo's/2026-03-30.md",
     "Projects/Meditrack/Mental Map.md",
     "Projects/Meditrack/Hexagonal Pattern.md",
-    "Projects/Meditrack/Big Picture Overview.md",
     "Projects/Meditrack",
     "Projects",
     "Jobs",
