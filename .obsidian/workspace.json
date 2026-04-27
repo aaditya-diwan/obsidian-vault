@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Jobs/technical.md",
-                "mode": "source",
+                "file": "Data Structures/Data Structures 101.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "technical"
+              "title": "Data Structures 101"
             }
           }
         ]
@@ -220,10 +220,12 @@
   },
   "active": "37d9cc6313b04e88",
   "lastOpenFiles": [
+    "Data Structures/Linked Lists.md",
+    "Data Structures/Data Structures 101.md",
+    "UCD/DEADLINE - PROJECTS & ASSIGNMENTS.md",
+    "Jobs/technical.md",
     "Jobs/Master Experience Banked.md",
     "Jobs/behavioral.md",
-    "Jobs/technical.md",
-    "UCD/DEADLINE - PROJECTS & ASSIGNMENTS.md",
     "UCD/EXAMS.md",
     "Projects/Meditrack/Big Picture Overview.md",
     "UCD",
@@ -235,7 +237,6 @@
     "Jobs",
     "Daily ToDo's",
     "Templates/Daily Note Template.md",
-    "Data Structures/Linked Lists.md",
     "Welcome.md",
     "Templates",
     "Untitled.base",
